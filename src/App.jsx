@@ -8,7 +8,7 @@ function App() {
   
 const router = createBrowserRouter([
   {
-    path: '/pmadhurn.github.io', // Base path
+    path: '/', // Base path
     element: <Layout />,
     children: [
       {
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
     ]
   }
 ]);
-  
   
   return (
     <>
