@@ -1,0 +1,148 @@
+/* .navbarul{
+  background-color: rgb(201, 201, 187);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: black;
+  text-decoration: none;
+  padding :6%
+}
+
+.navtext{
+  text-decoration: none;
+  color: rgb(62, 55, 55);
+  font-size: 120%;
+}
+
+
+.pict{
+  width: 30%;
+  border-radius: 20%;
+}
+
+.profilepic{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.homethings{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display:block;
+  justify-content: space-around;
+}
+.maintop{
+  background-color: rgb(196, 208, 204);
+  padding-bottom: 30%;
+} */
+
+
+/* Navbar styles */
+.navbarul {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #2c2c54;
+  text-decoration: none;
+  padding: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navtext {
+  text-decoration: none;
+  color: #2c2c54;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navtext:hover {
+  color: #ff6f61;
+}
+
+/* Profile picture */
+.pict {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #6c5ce7;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile container */
+.profilepic {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+/* Home details */
+.homethings {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  text-align: center;
+  background: linear-gradient(to bottom, #f3e6e8, #d1eaff);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.homethings h1,
+.homethings h2 {
+  margin: 0.5rem 0;
+  color: #2d3436;
+  font-family: 'Poppins', sans-serif;
+}
+
+.homethings h1.names {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6c5ce7;
+}
+
+.homethings h2.names {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #0984e3;
+}
+
+.homethings a {
+  text-decoration: none;
+  color: #6c5ce7;
+  transition: color 0.3s;
+}
+
+.homethings a:hover {
+  color: #fd79a8;
+}
+
+/* Main section */
+.maintop {
+  background: linear-gradient(to bottom right, #e3f2fd, #ede7f6);
+  padding-bottom: 10%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .pict {
+    width: 100px;
+    height: 100px;
+  }
+
+  .homethings h1.names {
+    font-size: 1.4rem;
+  }
+
+  .homethings h2.names {
+    font-size: 1.1rem;
+  }
+}
