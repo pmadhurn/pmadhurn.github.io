@@ -25,12 +25,10 @@ const Contact = () => {
     <>
       <div>
         <h1>Contact Me</h1>
-        <p>Email: pmadhurn@gmail.com</p>
-        <p>Phone: +91 9016273812 </p>
-
+      
         <div className="formf">
 
-          <br /> <p> Or <br />Leave a Message for me here</p> <br/>
+          <p> Leave a Message for me here</p> <br/>
           <form onSubmit={formHandeling}>
             <label htmlFor="fname">First Name:</label><br />
             <input type="text" id="fname" name="fname" value={user.fname} onChange={userReg} required /><br />

@@ -6,24 +6,26 @@ import Aboutme from './Components/Aboutme'
 import Contact from './Components/Contact'
 function App() {
   
-  const router = new createBrowserRouter([{
-    path : '/',
+const router = createBrowserRouter([
+  {
+    path: '/pmadhurn.github.io', // Base path
     element: <Layout />,
-    children : [{
-      path : '/Aboutme',
-      element: <Aboutme/>
-    },
-    {
-      path : 'Contact',
-      element: <Contact/>
-    },
-    {
-      path : 'Projects',
-      element: <Projects/>
-    }
-  ]
+    children: [
+      {
+        path: 'Aboutme',
+        element: <Aboutme />
+      },
+      {
+        path: 'Contact',
+        element: <Contact />
+      },
+      {
+        path: 'Projects',
+        element: <Projects />
+      }
+    ]
   }
-  ]);
+]);
   
   
   return (
