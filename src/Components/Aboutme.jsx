@@ -1,4 +1,5 @@
 import image from '../assets/IMA.png';
+import ParticleBackground from './ParticleBackground';
 const Aboutme = () => {
   return (
     <>
@@ -7,6 +8,8 @@ const Aboutme = () => {
         <div className="maintop">
           <div className="profilepic">
             <img src={image} className="pict" alt="sorry Image can not be loaded" />
+            <ParticleBackground />
+          <div id="particles-js"></div>
           </div>
           <div className="homethings">
             <h1 className='names'>Madhur N Patel</h1>
